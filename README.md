@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+Website Link - https://filmify-rahat.netlify.app/
+Project Name - Filmify - A small movie buying website.
+Details of the project-
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1) Creating The JSON File:
+- I have created a fake db file with 6-7 detailed information to use as API! 
+- My own JSON file has 14 objects in an array! 
+- I have used different key value for each object to avoid runtime error! 
+- Every object has its own detailed info about that particular movie/object!
 
-## Available Scripts
+2) Creating UI
+- I have created the UI dividing into two section. 1) Heading & 2) Main body
+- Heading part is divided by two components with their individual JS and CSS files.
+- Main Body Is divided into three part. The parent component and its two child component.
+- I have used font awesome CDN to view some icon. 
+- I also used Bootstrap CDN for the most part of the website! But beside that i also did some pure CSS to customize some part of the UI.
+- On the heading part i added a search input so that user can find what they are looking for.
+- Also added button to each card to interact with the website.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3) Functionality
+- I added an event handler to the button of the card. So that user can see that particular data.
+- With the button the user can see how much each movie costs and what is their total!
+- The detailed information has another button which will redirect the user to see the trailer of that particular movie.
+- added a slight functionality to search the movie by name of that movie!
