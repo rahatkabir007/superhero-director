@@ -25,7 +25,6 @@ const MovieList = () => {
     const handleDetails = movies => {
         const newMovies = [...details, movies]
         setDetails(newMovies);
-        console.log("clicked");
     }
 
     const handleSearch = event => {
