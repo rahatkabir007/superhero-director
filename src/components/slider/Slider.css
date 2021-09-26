@@ -1,0 +1,22 @@
+.slider {
+    background: #6B7AA1;
+    text-align: center;
+    padding: 35px;
+    font-size: 30px;
+    color: white; 
+}
+#web-name{
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(255, 183, 0);
+}
+#web-pic{
+    width: 2%;
+    position: relative;
+    bottom: 35px;
+    right: 20px;
+    transform: rotate(20deg);
+}
+.left-slide-area{
+   width: 25%;
+}
