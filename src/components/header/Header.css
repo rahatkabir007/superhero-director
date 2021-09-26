@@ -1,20 +1,23 @@
-
-.heading{
+.heading {
     background: #93B5C6;
 }
-.logo-area{
+
+.logo-area {
     margin: 10px 0 10px 0;
     padding: 5px 0 5px 0;
 }
-.nav-area{
+
+.nav-area {
     margin-right: 80px;
-   
+
 }
-.nav-area li a{
-     font-size: 20px;
-     color: #0A1D37;
-     font-weight: 600;
+
+.nav-area li a {
+    font-size: 20px;
+    color: #0A1D37;
+    font-weight: 600;
 }
-.toggler{
+
+.toggler {
     color: black;
 }

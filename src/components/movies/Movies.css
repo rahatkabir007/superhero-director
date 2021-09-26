@@ -1,11 +1,12 @@
-.card{
+.card {
     max-width: 440px;
-    padding:  10px;
+    padding: 10px;
     background-color: #96BAFF;
     border-radius: 10px;
-    font-weight: 600; 
+    font-weight: 600;
 }
-.movie-info{
+
+.movie-info {
     color: black;
-    font-size: 14px; 
+    font-size: 14px;
 }

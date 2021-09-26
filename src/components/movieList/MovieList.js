@@ -5,14 +5,21 @@ import Movies from '../movies/Movies';
 import "./MovieList.css"
 
 const MovieList = () => {
-
+    
+    //declaring state to show card data
     const [movies, setMovies] = useState([]);
+     //declaring state to show order details
     const [details, setDetails] = useState([]);
+     //declaring state to show data after searching by name
+    const [displayMovies, setDisplayMovies] = useState([]);
 
     useEffect(() => {
         fetch("./filmfakedb.json")
             .then(res => res.json())
-            .then(data => setMovies(data));
+            .then(data => {
+                setMovies(data);
+                setDisplayMovies(data);
+            });
     }, [])
     
     const handleDetails = movies => {
@@ -21,10 +28,16 @@ const MovieList = () => {
         console.log("clicked");
     }
 
+    const handleSearch = event => {
+        const searchText = event.target.value;
+        const matchedMovies = movies.filter(movie => movie.name.toLowerCase().includes(searchText.toLowerCase()));
+        setDisplayMovies(matchedMovies);
+    }
+
     return (
         <div>
             <div>
-                <Header></Header>
+                <Header handleSearch={handleSearch}></Header>
             </div>
             <div className="container card-area">
                 <div className="row">
@@ -32,7 +45,7 @@ const MovieList = () => {
                     <div className="col-md-9" >
                             <div className="row">
                             {
-                             movies.map(movie =><Movies key = {movie.key} movie={movie} handleDetails = {handleDetails}></Movies>)   
+                             displayMovies.map(movie =><Movies key = {movie.key} movie={movie} handleDetails = {handleDetails}></Movies>)   
                             }
                             </div>
                     </div>

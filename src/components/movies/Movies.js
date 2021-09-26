@@ -17,7 +17,7 @@ const Movies = (props) => {
                             <p class="card-text">Genre: {genre}</p>
                             <p class="card-text">Cast: {actor}</p>
                             <p class="card-text">Release Year: {year}</p>
-                            <p class="card-text">IMDB Rating: {rating}</p>
+                            <p class="card-text">IMDB Rating:{rating} </p>
                             <p class="card-text">Price: {price}$</p>
                             <button onClick={() => props.handleDetails(props.movie)} className="btn btn-warning"> <span> <i class="fas fa-shopping-cart"></i></span> Purchase</button>
                         </div>

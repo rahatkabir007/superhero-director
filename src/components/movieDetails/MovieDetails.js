@@ -14,7 +14,7 @@ const MovieDetails = (props) => {
             <div className="details-head">
                 <h3>Movie Selected: {details.length}</h3>
                 <h3>Total Price: {total}$</h3>
-                <h4>You have Bought: </h4>
+                <h4 className="mb-4">You have Bought: </h4>
                 <ul>
                     {
                         details.map(detail => {

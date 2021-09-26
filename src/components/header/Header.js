@@ -2,8 +2,8 @@ import React from 'react';
 import logo from './images/logo.png'
 import './Header.css';
 import Slider from '../slider/Slider';
-const Header = () => {
-    
+const Header = (props) => {
+
     return (
         <div >
             <div className="d-flex justify-content-between align-items-center heading">
@@ -35,14 +35,14 @@ const Header = () => {
                 </nav>
                 <div>
                     <form className="d-flex flex-fill mx-5">
-                        <input className="form-control me-2" type="search" placeholder="Enter movie name" aria-label="Search"></input>
+                        <input onChange={props.handleSearch} className="form-control me-2" type="search" placeholder="Enter movie name" aria-label="Search"></input>
                         <button className="btn btn-warning" type="submit">Search</button>
                     </form>
                 </div>
             </div>
             <Slider></Slider>
 
-           
+
         </div>
     );
 };
