@@ -19,7 +19,7 @@ const MovieDetails = (props) => {
                     {
                         details.map(detail => {
                             return (
-                                <div className="card h-100 " id="detail-card">
+                                <div className="card h-100" id="detail-card">
                                     <img src={detail.image} className="card-img-top w-75 mx-auto p-2" alt="..."></img>
                                     <div className="card-body">
                                         <h5 className="card-title p-2">Name: {detail.name}</h5>
